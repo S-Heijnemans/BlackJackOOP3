@@ -8,10 +8,20 @@ namespace BlackJackOOP3.classes
 {
     class Player
     {
-        String name;
-        List<Hand> hands;
-        int balance;
-        int chips;
-        int startChips;
+        String Name;
+        List<Hand> Hands;
+        int Balance;
+        int Chips;
+        int StartChips;
+
+        public void PlaceBet()
+        {
+            //the player places a bet to a hand
+        }
+
+        public void GetWinst()
+        {
+            // takes the StartChips and Chips and calculates how many chips you won/lost
+        }
     }
 }
