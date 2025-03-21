@@ -38,5 +38,10 @@ namespace BlackJackOOP3.classes
         {
             // the dealer checks if there is a blackjack and performs the corresponding action
         }
+
+        public void ShuffleDeck()
+        {
+            // shuffles the deck of cards without douplecating those cards
+        }
     }
 }
