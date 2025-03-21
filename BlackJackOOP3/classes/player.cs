@@ -23,5 +23,10 @@ namespace BlackJackOOP3.classes
         {
             // takes the StartChips and Chips and calculates how many chips you won/lost
         }
+
+        public void GetChips()
+        {
+            //takes and shows the amount of chips the player has at the moment
+        }
     }
 }
