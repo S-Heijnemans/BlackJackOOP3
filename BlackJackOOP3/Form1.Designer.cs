@@ -35,7 +35,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(421, 274);
+            button1.Location = new Point(493, 212);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 0;
@@ -55,11 +55,12 @@
             // drawnCard
             // 
             drawnCard.AutoSize = true;
-            drawnCard.Location = new Point(272, 152);
+            drawnCard.Location = new Point(357, 147);
             drawnCard.Name = "drawnCard";
             drawnCard.Size = new Size(50, 20);
             drawnCard.TabIndex = 2;
             drawnCard.Text = "label1";
+            drawnCard.Click += drawnCard_Click;
             // 
             // Form1
             // 
