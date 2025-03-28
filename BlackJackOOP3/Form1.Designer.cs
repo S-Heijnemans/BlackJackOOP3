@@ -29,31 +29,57 @@
         private void InitializeComponent()
         {
             button1 = new Button();
+            drawCardButton = new Button();
+            drawnCard = new Label();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(421, 274);
+            button1.Location = new Point(493, 212);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            // 
+            // drawCardButton
+            // 
+            drawCardButton.Location = new Point(493, 130);
+            drawCardButton.Name = "drawCardButton";
+            drawCardButton.Size = new Size(94, 55);
+            drawCardButton.TabIndex = 1;
+            drawCardButton.Text = "card Deck";
+            drawCardButton.UseVisualStyleBackColor = true;
+            drawCardButton.Click += drawCardButton_Click;
+            // 
+            // drawnCard
+            // 
+            drawnCard.AutoSize = true;
+            drawnCard.Location = new Point(357, 147);
+            drawnCard.Name = "drawnCard";
+            drawnCard.Size = new Size(50, 20);
+            drawnCard.TabIndex = 2;
+            drawnCard.Text = "label1";
+            drawnCard.Click += drawnCard_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(767, 450);
+            Controls.Add(drawnCard);
+            Controls.Add(drawCardButton);
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button button1;
+        private Button drawCardButton;
+        private Label drawnCard;
     }
 }
