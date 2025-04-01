@@ -28,19 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
             drawCardButton = new Button();
             drawnCard = new Label();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Location = new Point(493, 212);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
             // 
             // drawCardButton
             // 
@@ -69,7 +59,6 @@
             ClientSize = new Size(767, 450);
             Controls.Add(drawnCard);
             Controls.Add(drawCardButton);
-            Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -77,8 +66,6 @@
         }
 
         #endregion
-
-        private Button button1;
         private Button drawCardButton;
         private Label drawnCard;
     }

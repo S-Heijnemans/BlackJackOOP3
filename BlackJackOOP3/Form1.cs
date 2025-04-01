@@ -16,5 +16,10 @@ namespace BlackJackOOP3
             Card card = deck.Drawcard();
             drawnCard.Text = card.ToString();
         }
+
+        private void drawnCard_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
