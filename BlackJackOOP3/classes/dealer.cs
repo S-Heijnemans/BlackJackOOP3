@@ -12,36 +12,6 @@ namespace BlackJackOOP3.classes
         Hand hand;
         int points;
 
-        public void DealCardDown()
-        {
-            // the dealer should be able to give a card to a hand and remove that card from the deck
-        }
 
-        public void Payout()
-        {
-            // lets the dealer give the players the money they earned if they won
-        }
-
-        public int WinPoint()
-        {
-            // the dealer earns a point for performing the correct move
-            return points +1;
-        }
-
-        public int LosePoint()
-        {
-            // the dealer loses a point for performing the wrong move
-            return points -1;
-        }
-
-        public void CheckBlackjack()
-        {
-            // the dealer checks if there is a blackjack and performs the corresponding action
-        }
-
-        public void ShuffleDeck()
-        {
-            // shuffles the deck of cards without douplecating those cards
-        }
     }
 }
