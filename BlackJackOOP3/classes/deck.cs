@@ -11,6 +11,10 @@ namespace BlackJackOOP3.classes
     {
        public List<Card> Cards = new List<Card>();
 
+        /**
+         * this generates a deck using the suit and facevalue of Card 
+         * to go true all of the options and generates all unique 52 cards needed in a deck
+         */
         public Deck()
         {
             int index = 1;
@@ -24,6 +28,10 @@ namespace BlackJackOOP3.classes
             }
         }
 
+        /**
+         * this deals or takes the top card of the deck and also removes this card from the list of cards in the deck
+         * if the deck has no cards left it will return null and not give a card
+         */
         public Card? Drawcard()
         {
             if(Cards.Count <= 0)
