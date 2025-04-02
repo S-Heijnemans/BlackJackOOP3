@@ -26,12 +26,6 @@ namespace BlackJackOOP3.classes
                 deck.Cards[n] = temp;
             }
 
-            //for (int currentIndex = 0; currentIndex < deck.Cards.Count; currentIndex++)
-            //{
-            //    int swapIndex = currentIndex + rng.Next(deck.Cards.Count - currentIndex);
-            //    (deck.Cards[swapIndex], deck.Cards[currentIndex]) = (deck.Cards[currentIndex], deck.Cards[swapIndex]);
-            //}
-
         }
     }
 }
