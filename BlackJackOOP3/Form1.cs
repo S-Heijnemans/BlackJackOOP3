@@ -1,15 +1,20 @@
+using BlackJackOOP3.classes;
+
 namespace BlackJackOOP3
 {
     public partial class Form1 : Form
     {
+
+        Deck deck = new Deck();
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void drawCardButton_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Hello World");
+            Card card = deck.Drawcard();
+            drawnCard.Text = card.ToString();
         }
     }
 }

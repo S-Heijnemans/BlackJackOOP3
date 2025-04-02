@@ -36,11 +36,6 @@ namespace BlackJackOOP3.classes
             cards.RemoveAt(0);
             return drawnCard;
         }
-
-        public void Shuffle()
-        {
-            
-        }
     }
 
 
