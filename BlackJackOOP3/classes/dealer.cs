@@ -25,7 +25,16 @@ namespace BlackJackOOP3.classes
                 deck.Cards[k] = deck.Cards[n];
                 deck.Cards[n] = temp;
             }
+        }
 
+        public void RemovePoint()
+        {
+            points--;
+        }
+
+        public void AddPoint()
+        {
+            points++;
         }
     }
 }
