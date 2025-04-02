@@ -28,19 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
             drawCardButton = new Button();
             drawnCard = new Label();
+            button1 = new Button();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Location = new Point(493, 212);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
             // 
             // drawCardButton
             // 
@@ -62,24 +53,34 @@
             drawnCard.Text = "label1";
             drawnCard.Click += drawnCard_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(493, 202);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 49);
+            button1.TabIndex = 3;
+            button1.Text = "shuffle";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(767, 450);
+            Controls.Add(button1);
             Controls.Add(drawnCard);
             Controls.Add(drawCardButton);
-            Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Button button1;
         private Button drawCardButton;
         private Label drawnCard;
+        private Button button1;
     }
 }

@@ -9,9 +9,7 @@ namespace BlackJackOOP3.classes
 {
     class Deck
     {
-        List<Card> cards = new List<Card>();
-
-        Card[] GameCards = new Card[52];
+       public List<Card> Cards = new List<Card>();
 
         public Deck()
         {
@@ -21,19 +19,19 @@ namespace BlackJackOOP3.classes
             {
                 foreach(Facevalue facevalue in Enum.GetValues(typeof(Facevalue)))
                 {
-                    cards.Add(new Card(suit, facevalue));
+                    Cards.Add(new Card(suit, facevalue));
                 }
             }
         }
 
-        public Card Drawcard()
+        public Card? Drawcard()
         {
-            if(cards.Count <= 0)
+            if(Cards.Count <= 0)
             {
                 return null;
             }
-            Card drawnCard = cards[0];
-            cards.RemoveAt(0);
+            Card drawnCard = Cards[0];
+            Cards.RemoveAt(0);
             return drawnCard;
         }
     }
