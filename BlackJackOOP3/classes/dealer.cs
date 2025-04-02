@@ -15,9 +15,9 @@ namespace BlackJackOOP3.classes
         public void Shuffle(Deck deck)
         {
             Random rng = new Random();
-            int n = 52;
+            int n = deck.Cards.Count;
 
-            while ( n > 1)
+            while (n > 1)
             {
                 n--;
                 int k = rng.Next(n + 1);
@@ -25,6 +25,12 @@ namespace BlackJackOOP3.classes
                 deck.Cards[k] = deck.Cards[n];
                 deck.Cards[n] = temp;
             }
+
+            //for (int currentIndex = 0; currentIndex < deck.Cards.Count; currentIndex++)
+            //{
+            //    int swapIndex = currentIndex + rng.Next(deck.Cards.Count - currentIndex);
+            //    (deck.Cards[swapIndex], deck.Cards[currentIndex]) = (deck.Cards[currentIndex], deck.Cards[swapIndex]);
+            //}
 
         }
     }

@@ -23,7 +23,7 @@ namespace BlackJackOOP3.classes
             }
         }
 
-        public Card Drawcard()
+        public Card? Drawcard()
         {
             if(Cards.Count <= 0)
             {
