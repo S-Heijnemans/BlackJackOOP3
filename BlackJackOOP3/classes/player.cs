@@ -9,7 +9,7 @@ namespace BlackJackOOP3.classes
     class Player
     {
         String Name;
-        List<Hand> Hands;
+        public List<Hand> Hands;
         int Balance;
         int Chips;
         int StartChips;

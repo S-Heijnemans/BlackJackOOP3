@@ -7,6 +7,7 @@ namespace BlackJackOOP3
 
         Deck deck;
         Dealer dealer;
+        Player playerEen;
         public Form1()
         {
             InitializeComponent();
@@ -28,12 +29,21 @@ namespace BlackJackOOP3
         private void button1_Click(object sender, EventArgs e)
         {
             dealer.Shuffle(deck);
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.dealer.DealCardFaceUp(this.deck, this.playerEen.Hands[0]);
         }
     }
 }

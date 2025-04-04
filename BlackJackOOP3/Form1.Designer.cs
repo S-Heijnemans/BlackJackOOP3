@@ -31,11 +31,14 @@
             drawCardButton = new Button();
             drawnCard = new Label();
             button1 = new Button();
+            label1 = new Label();
+            PlayerCard = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // drawCardButton
             // 
-            drawCardButton.Location = new Point(493, 130);
+            drawCardButton.Location = new Point(625, 226);
             drawCardButton.Name = "drawCardButton";
             drawCardButton.Size = new Size(94, 55);
             drawCardButton.TabIndex = 1;
@@ -46,7 +49,7 @@
             // drawnCard
             // 
             drawnCard.AutoSize = true;
-            drawnCard.Location = new Point(357, 147);
+            drawnCard.Location = new Point(483, 243);
             drawnCard.Name = "drawnCard";
             drawnCard.Size = new Size(50, 20);
             drawnCard.TabIndex = 2;
@@ -55,7 +58,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(493, 202);
+            button1.Location = new Point(625, 287);
             button1.Name = "button1";
             button1.Size = new Size(94, 49);
             button1.TabIndex = 3;
@@ -63,11 +66,43 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(68, 52);
+            label1.Name = "label1";
+            label1.Size = new Size(61, 20);
+            label1.TabIndex = 4;
+            label1.Text = "speler 1";
+            // 
+            // PlayerCard
+            // 
+            PlayerCard.AutoSize = true;
+            PlayerCard.Location = new Point(51, 82);
+            PlayerCard.Name = "PlayerCard";
+            PlayerCard.Size = new Size(96, 20);
+            PlayerCard.TabIndex = 5;
+            PlayerCard.Text = "Card speler 1";
+            PlayerCard.Click += label2_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(355, 347);
+            button2.Name = "button2";
+            button2.Size = new Size(119, 29);
+            button2.TabIndex = 6;
+            button2.Text = "deal card up";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(767, 450);
+            Controls.Add(button2);
+            Controls.Add(PlayerCard);
+            Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(drawnCard);
             Controls.Add(drawCardButton);
@@ -82,5 +117,8 @@
         private Button drawCardButton;
         private Label drawnCard;
         private Button button1;
+        private Label label1;
+        private Label PlayerCard;
+        private Button button2;
     }
 }
