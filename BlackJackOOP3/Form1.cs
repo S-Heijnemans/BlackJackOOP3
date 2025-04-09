@@ -7,7 +7,11 @@ namespace BlackJackOOP3
 
         Deck deck;
         Dealer dealer;
-        Player playerEen;
+        Hand handP1;
+        Hand handP2;
+        Hand handP3;
+        Hand handP4;
+
         public Form1()
         {
             InitializeComponent();
@@ -18,6 +22,11 @@ namespace BlackJackOOP3
         private void drawCardButton_Click(object sender, EventArgs e)
         {
             Card card = deck.Drawcard();
+            if ( card == null)
+            {
+                deck.ResetDeck();
+                card = deck.Drawcard();
+            }
             drawnCard.Text = card.ToString();
         }
 
@@ -43,7 +52,46 @@ namespace BlackJackOOP3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.dealer.DealCardFaceUp(this.deck, this.playerEen.Hands[0]);
+            Card DealCard = dealer.DealCardFaceUp(deck, handP1);
+            PlayerEenCard.Text = DealCard.ToString();
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void playerTweeDealUp_Click(object sender, EventArgs e)
+        {
+            Card DealCard = dealer.DealCardFaceUp(deck, handP2);
+            playerTweeCard.Text = DealCard.ToString();
+        }
+
+        private void playerTweeCard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void playerDrieCard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void playerDrieDealUp_Click(object sender, EventArgs e)
+        {
+            Card DealCard = dealer.DealCardFaceUp(deck, handP3);
+            playerDrieCard.Text = DealCard.ToString();
+        }
+
+        private void PlayerVierCard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void playerVierDealUp_Click(object sender, EventArgs e)
+        {
+            Card DealCard = dealer.DealCardFaceUp(deck, handP4);
+            playerVierCard.Text = DealCard.ToString();
         }
     }
 }

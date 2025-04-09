@@ -17,11 +17,16 @@ namespace BlackJackOOP3.classes
          */
         public Deck()
         {
+            ResetDeck();
+        }
+
+        public void ResetDeck()
+        {
             int index = 1;
 
             foreach (Suits suit in Enum.GetValues(typeof(Suits)))
             {
-                foreach(Facevalue facevalue in Enum.GetValues(typeof(Facevalue)))
+                foreach (Facevalue facevalue in Enum.GetValues(typeof(Facevalue)))
                 {
                     Cards.Add(new Card(suit, facevalue));
                 }

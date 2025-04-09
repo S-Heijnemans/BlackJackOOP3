@@ -32,19 +32,24 @@ namespace BlackJackOOP3.classes
             }
         }
 
-        public Card? TakeCard(Deck deck)
+        public Card TakeCard(Deck deck)
         {
             var TakenCard = deck.Drawcard();
             return TakenCard;
         }
 
-        public void DealCardFaceUp(Deck deck, Hand hand)
+        public Card DealCardFaceUp(Deck deck, Hand hand)
         {
             Card DealCard = TakeCard(deck);
-            if (DealCard != null)
-            {
-                hand.cards.Add(DealCard);
-            }
+            //if (DealCard != null)
+            //{
+            //    hand?.cards.Add(DealCard);
+            //    return DealCard;
+            //}
+            hand?.cards.Add(DealCard);
+            return DealCard;
+
+
         }
 
         /**

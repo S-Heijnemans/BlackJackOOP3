@@ -14,6 +14,7 @@ namespace BlackJackOOP3.classes
         int Chips;
         int StartChips;
 
+        //make it so that it creates a lable look at Designer 
         public void PlaceBet()
         {
             //the player places a bet to a hand
