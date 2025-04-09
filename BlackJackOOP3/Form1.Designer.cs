@@ -28,16 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            drawCardButton = new Button();
+            drawnCard = new Label();
             button1 = new Button();
             SuspendLayout();
             // 
+            // drawCardButton
+            // 
+            drawCardButton.Location = new Point(493, 130);
+            drawCardButton.Name = "drawCardButton";
+            drawCardButton.Size = new Size(94, 55);
+            drawCardButton.TabIndex = 1;
+            drawCardButton.Text = "card Deck";
+            drawCardButton.UseVisualStyleBackColor = true;
+            drawCardButton.Click += drawCardButton_Click;
+            // 
+            // drawnCard
+            // 
+            drawnCard.AutoSize = true;
+            drawnCard.Location = new Point(357, 147);
+            drawnCard.Name = "drawnCard";
+            drawnCard.Size = new Size(50, 20);
+            drawnCard.TabIndex = 2;
+            drawnCard.Text = "label1";
+            drawnCard.Click += drawnCard_Click;
+            // 
             // button1
             // 
-            button1.Location = new Point(421, 274);
+            button1.Location = new Point(493, 202);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Size = new Size(94, 49);
+            button1.TabIndex = 3;
+            button1.Text = "shuffle";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -47,13 +69,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(767, 450);
             Controls.Add(button1);
+            Controls.Add(drawnCard);
+            Controls.Add(drawCardButton);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
+        private Button drawCardButton;
+        private Label drawnCard;
         private Button button1;
     }
 }
