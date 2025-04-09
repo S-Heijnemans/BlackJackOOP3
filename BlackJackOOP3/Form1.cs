@@ -1,3 +1,4 @@
+using System.Security.Cryptography.X509Certificates;
 using BlackJackOOP3.classes;
 
 namespace BlackJackOOP3
@@ -11,6 +12,7 @@ namespace BlackJackOOP3
         Hand handP2;
         Hand handP3;
         Hand handP4;
+        Player playerEen = new Player();
 
         public Form1()
         {
@@ -53,7 +55,11 @@ namespace BlackJackOOP3
         private void button2_Click(object sender, EventArgs e)
         {
             Card DealCard = dealer.DealCardFaceUp(deck, handP1);
-            PlayerEenCard.Text = DealCard.ToString();
+
+            //this goes to the player and gives the card value "DealCard" and the location of this button "((Button)sneder).Location"
+            this.Controls.Add(playerEen.CreateCardLabel(DealCard, ((Button)sender).Location));
+
+            
         }
 
         private void label2_Click_1(object sender, EventArgs e)

@@ -41,11 +41,6 @@ namespace BlackJackOOP3.classes
         public Card DealCardFaceUp(Deck deck, Hand hand)
         {
             Card DealCard = TakeCard(deck);
-            //if (DealCard != null)
-            //{
-            //    hand?.cards.Add(DealCard);
-            //    return DealCard;
-            //}
             hand?.cards.Add(DealCard);
             return DealCard;
 

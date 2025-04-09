@@ -15,8 +15,30 @@ namespace BlackJackOOP3.classes
         int Balance;
         int Chips;
         int StartChips;
+        int LastYvalue = 25;
 
-        //make it so that it creates a lable look at Designer 
+        /**
+         * this is where it creates a label with the text from the drawn card
+         * it asks for a card to add the card
+         * and it asks for Point location to be able to obtain the X and Y value to set the location
+         */
+        public Label CreateCardLabel(Card card, Point location)
+        {
+            Label PlayerCardLabel = new Label();
+            PlayerCardLabel.Text = card.ToString();
+
+            //hardcode the Width and Height of the size of the lable  
+            PlayerCardLabel.Width = 120;
+            PlayerCardLabel.Height = 22;
+
+            PlayerCardLabel.Location = new Point(location.X, location.Y + LastYvalue);
+
+            LastYvalue += 25;
+
+            return PlayerCardLabel;
+            //PlayerCardLabel.Location(location1, location2);
+
+        }
         public void PlaceBet()
         {
             //the player places a bet to a hand

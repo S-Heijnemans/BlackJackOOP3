@@ -32,7 +32,6 @@
             drawnCard = new Label();
             button1 = new Button();
             label1 = new Label();
-            PlayerEenCard = new Label();
             playerEenDealUp = new Button();
             playerTweeDealUp = new Button();
             playerDrieDealUp = new Button();
@@ -40,14 +39,11 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            playerTweeCard = new Label();
-            playerDrieCard = new Label();
-            playerVierCard = new Label();
             SuspendLayout();
             // 
             // drawCardButton
             // 
-            drawCardButton.Location = new Point(273, 238);
+            drawCardButton.Location = new Point(285, 346);
             drawCardButton.Name = "drawCardButton";
             drawCardButton.Size = new Size(94, 55);
             drawCardButton.TabIndex = 1;
@@ -58,7 +54,7 @@
             // drawnCard
             // 
             drawnCard.AutoSize = true;
-            drawnCard.Location = new Point(345, 215);
+            drawnCard.Location = new Point(356, 310);
             drawnCard.Name = "drawnCard";
             drawnCard.Size = new Size(50, 20);
             drawnCard.TabIndex = 2;
@@ -67,7 +63,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(373, 238);
+            button1.Location = new Point(385, 346);
             button1.Name = "button1";
             button1.Size = new Size(94, 55);
             button1.TabIndex = 3;
@@ -78,21 +74,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(68, 52);
+            label1.Location = new Point(66, 102);
             label1.Name = "label1";
             label1.Size = new Size(61, 20);
             label1.TabIndex = 4;
             label1.Text = "speler 1";
-            // 
-            // PlayerEenCard
-            // 
-            PlayerEenCard.AutoSize = true;
-            PlayerEenCard.Location = new Point(51, 82);
-            PlayerEenCard.Name = "PlayerEenCard";
-            PlayerEenCard.Size = new Size(96, 20);
-            PlayerEenCard.TabIndex = 5;
-            PlayerEenCard.Text = "Card speler 1";
-            PlayerEenCard.Click += label2_Click;
             // 
             // playerEenDealUp
             // 
@@ -137,7 +123,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(253, 52);
+            label2.Location = new Point(253, 102);
             label2.Name = "label2";
             label2.Size = new Size(61, 20);
             label2.TabIndex = 10;
@@ -147,7 +133,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(464, 52);
+            label3.Location = new Point(453, 102);
             label3.Name = "label3";
             label3.Size = new Size(61, 20);
             label3.TabIndex = 11;
@@ -156,50 +142,17 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(641, 52);
+            label4.Location = new Point(641, 102);
             label4.Name = "label4";
             label4.Size = new Size(61, 20);
             label4.TabIndex = 12;
             label4.Text = "speler 4";
-            // 
-            // playerTweeCard
-            // 
-            playerTweeCard.AutoSize = true;
-            playerTweeCard.Location = new Point(238, 82);
-            playerTweeCard.Name = "playerTweeCard";
-            playerTweeCard.Size = new Size(94, 20);
-            playerTweeCard.TabIndex = 13;
-            playerTweeCard.Text = "card speler 2";
-            playerTweeCard.Click += playerTweeCard_Click;
-            // 
-            // playerDrieCard
-            // 
-            playerDrieCard.AutoSize = true;
-            playerDrieCard.Location = new Point(442, 82);
-            playerDrieCard.Name = "playerDrieCard";
-            playerDrieCard.Size = new Size(94, 20);
-            playerDrieCard.TabIndex = 14;
-            playerDrieCard.Text = "card speler 3";
-            playerDrieCard.Click += playerDrieCard_Click;
-            // 
-            // playerVierCard
-            // 
-            playerVierCard.AutoSize = true;
-            playerVierCard.Location = new Point(623, 82);
-            playerVierCard.Name = "playerVierCard";
-            playerVierCard.Size = new Size(94, 20);
-            playerVierCard.TabIndex = 15;
-            playerVierCard.Text = "card speler 4";
-            playerVierCard.Click += PlayerVierCard_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(767, 450);
-            Controls.Add(playerVierCard);
-            Controls.Add(playerDrieCard);
-            Controls.Add(playerTweeCard);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -207,7 +160,6 @@
             Controls.Add(playerDrieDealUp);
             Controls.Add(playerTweeDealUp);
             Controls.Add(playerEenDealUp);
-            Controls.Add(PlayerEenCard);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(drawnCard);
@@ -224,7 +176,6 @@
         private Label drawnCard;
         private Button button1;
         private Label label1;
-        private Label PlayerEenCard;
         private Button playerEenDealUp;
         private Button playerTweeDealUp;
         private Button playerDrieDealUp;
@@ -232,8 +183,5 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private Label playerTweeCard;
-        private Label playerDrieCard;
-        private Label playerVierCard;
     }
 }
