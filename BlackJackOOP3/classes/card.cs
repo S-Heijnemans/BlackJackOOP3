@@ -34,22 +34,15 @@ namespace BlackJackOOP3.classes
         Facevalue facevalue;
         int value;
         Image img;
-
-        public Suits Suit 
-        { 
-            get 
-            { 
-                return suit; 
-            } 
-        }
-        public int Value 
-        { 
-            get 
-            { 
-                return value; 
-            } 
-        }
         
+        public Suits Suit { 
+            get { 
+                return suit; 
+            }
+            set {
+                suit = value;
+            }
+        }
 
         public Card(Suits suit, Facevalue facevalue) {
             this.suit = suit;
@@ -69,11 +62,7 @@ namespace BlackJackOOP3.classes
                     break;
             }
         }
-
-        public override string ToString()
-        {
-            return this.facevalue + " Of " + this.suit;
-        }
+       
 
     }
 }
