@@ -8,6 +8,8 @@ namespace BlackJackOOP3.classes
 {
     class Player
     {
+
+
         String Name;
         public List<Hand> Hands;
         int Balance;
