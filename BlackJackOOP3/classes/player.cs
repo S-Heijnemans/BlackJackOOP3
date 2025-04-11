@@ -15,6 +15,8 @@ namespace BlackJackOOP3.classes
         int Balance;
         int Chips;
         int StartChips;
+
+
         int LastYvalue = 25;
 
         /**
@@ -28,7 +30,7 @@ namespace BlackJackOOP3.classes
             PlayerCardLabel.Text = card.ToString();
 
             //hardcode the Width and Height of the size of the lable  
-            PlayerCardLabel.Width = 120;
+            PlayerCardLabel.Width = 160;
             PlayerCardLabel.Height = 22;
 
             PlayerCardLabel.Location = new Point(location.X, location.Y + LastYvalue);

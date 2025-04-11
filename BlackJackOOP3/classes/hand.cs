@@ -8,7 +8,7 @@ namespace BlackJackOOP3.classes
 {
     class Hand
     {
-        public List<Card> cards = new List<Card>();
+        public List<Card> cards = new List<Card>(); 
         Bet bet;
 
         public void Hit()

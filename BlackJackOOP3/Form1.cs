@@ -13,6 +13,9 @@ namespace BlackJackOOP3
         Hand handP3;
         Hand handP4;
         Player playerEen = new Player();
+        Player playerTwee = new Player();
+        Player playerDrie = new Player();
+        Player playerVier = new Player();
 
         public Form1()
         {
@@ -70,7 +73,7 @@ namespace BlackJackOOP3
         private void playerTweeDealUp_Click(object sender, EventArgs e)
         {
             Card DealCard = dealer.DealCardFaceUp(deck, handP2);
-            playerTweeCard.Text = DealCard.ToString();
+            this.Controls.Add(playerTwee.CreateCardLabel(DealCard, ((Button)sender).Location));
         }
 
         private void playerTweeCard_Click(object sender, EventArgs e)
@@ -86,7 +89,7 @@ namespace BlackJackOOP3
         private void playerDrieDealUp_Click(object sender, EventArgs e)
         {
             Card DealCard = dealer.DealCardFaceUp(deck, handP3);
-            playerDrieCard.Text = DealCard.ToString();
+            this.Controls.Add(playerDrie.CreateCardLabel(DealCard, ((Button)sender).Location));
         }
 
         private void PlayerVierCard_Click(object sender, EventArgs e)
@@ -97,7 +100,7 @@ namespace BlackJackOOP3
         private void playerVierDealUp_Click(object sender, EventArgs e)
         {
             Card DealCard = dealer.DealCardFaceUp(deck, handP4);
-            playerVierCard.Text = DealCard.ToString();
+            this.Controls.Add(playerVier.CreateCardLabel(DealCard, ((Button)sender).Location));
         }
     }
 }
