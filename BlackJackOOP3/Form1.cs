@@ -73,6 +73,8 @@ namespace BlackJackOOP3
         private void playerTweeDealUp_Click(object sender, EventArgs e)
         {
             Card DealCard = dealer.DealCardFaceUp(deck, handP2);
+
+            //this goes to the player and gives the card value "DealCard" and the location of this button "((Button)sneder).Location"
             this.Controls.Add(playerTwee.CreateCardLabel(DealCard, ((Button)sender).Location));
         }
 
@@ -89,6 +91,8 @@ namespace BlackJackOOP3
         private void playerDrieDealUp_Click(object sender, EventArgs e)
         {
             Card DealCard = dealer.DealCardFaceUp(deck, handP3);
+
+            //this goes to the player and gives the card value "DealCard" and the location of this button "((Button)sneder).Location"
             this.Controls.Add(playerDrie.CreateCardLabel(DealCard, ((Button)sender).Location));
         }
 
@@ -100,6 +104,8 @@ namespace BlackJackOOP3
         private void playerVierDealUp_Click(object sender, EventArgs e)
         {
             Card DealCard = dealer.DealCardFaceUp(deck, handP4);
+
+            //this goes to the player and gives the card value "DealCard" and the location of this button "((Button)sneder).Location"
             this.Controls.Add(playerVier.CreateCardLabel(DealCard, ((Button)sender).Location));
         }
     }
